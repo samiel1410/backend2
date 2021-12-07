@@ -6,6 +6,8 @@ use App\Http\Controllers\EcuacionController;
 use App\Http\Controllers\DerivadaController;
 use App\Http\Controllers\TablaController;
 use App\Http\Controllers\Test;
+use App\Http\Controllers\DensidadController;
+use App\Http\Controllers\VolumenController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -39,4 +41,7 @@ Route::get('/segundoGrado/{a?}/{b?}/{c?}', [TablaController::class,'segundoGrado
 //grado3
 Route::get('/tercerGrado/{a?}/{b?}/{c?}/{d?}', [TablaController::class,'tercerGrado']);
 Route::get('/suma', [EcuacionController::class,'suma']);
+
+Route::get('/densidad/{presion?}/{densidad?}/{temperatura?}/{pesoM?}', [DensidadController::class,'densidad']);
+Route::get('/volumen/{volumen1?}/{presion1?}/{temperatura1?}/{presion2?}/{temperatura2?}', [VolumenController::class,'volumen']);
  
