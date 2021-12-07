@@ -42,6 +42,6 @@ Route::get('/segundoGrado/{a?}/{b?}/{c?}', [TablaController::class,'segundoGrado
 Route::get('/tercerGrado/{a?}/{b?}/{c?}/{d?}', [TablaController::class,'tercerGrado']);
 Route::get('/suma', [EcuacionController::class,'suma']);
 
-Route::get('/densidad/{presion?}/{densidad?}/{temperatura?}/{pesoM?}', [DensidadController::class,'densidad']);
+Route::get('/densidad/{presion?}/{temperatura?}/{pesoM?}', [DensidadController::class,'densidad']);
 Route::get('/volumen/{volumen1?}/{presion1?}/{temperatura1?}/{presion2?}/{temperatura2?}', [VolumenController::class,'volumen']);
  

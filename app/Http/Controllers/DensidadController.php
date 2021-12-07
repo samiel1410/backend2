@@ -8,7 +8,7 @@ use App\Models\Densidad;
 
 class DensidadController extends Controller
 {
-    public function densidad($presion,$densidad,$temperatura,$pesoM){
+    public function densidad($presion,$temperatura,$pesoM){
 
         $conts = 0.08205746;
         $resultado = ($presion*$pesoM)/($conts*$temperatura);
